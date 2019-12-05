@@ -1,0 +1,14 @@
+<datasource jndi-name="java:jboss/datasources/OracleDS" pool-name="OracleDS" enabled="true">
+  <connection-url>jdbc:oracle:thin:@server_address:1521</connection-url>
+  <driver>oracle</driver>
+  <security>
+    <user-name>user_name</user-name>
+    <password>password</password>
+  </security>
+  <validation>
+  <check-valid-connection-sql>select 1 from dual</check-valid-connection-sql>
+    <validate-on-match>false</validate-on-match>
+    <background-validation>true</background-validation>
+    <background-validation-millis>20000</background-validation-millis>
+  </validation>
+</datasource>
