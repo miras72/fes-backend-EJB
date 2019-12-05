@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>pl.tycm.fes</groupId>
+	<artifactId>FES-BackEnd-EJB</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<version.org.jboss.spec.jboss.javaee7>1.0.3.Final-redhat-8</version.org.jboss.spec.jboss.javaee7>
+		<version.org.jboss.resteasy>3.0.19.SP4-redhat-1</version.org.jboss.resteasy>
+		<version.org.jboss.eap>7.0.9.GA-redhat-1</version.org.jboss.eap>
+		<version.org.jboss.resteasy>3.0.19.SP4-redhat-1</version.org.jboss.resteasy>
+	</properties>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+			<version>2.9.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.sshtools/j2ssh-maverick -->
+		<dependency>
+			<groupId>com.sshtools</groupId>
+			<artifactId>j2ssh-maverick</artifactId>
+			<version>1.5.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>3.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.bouncycastle/bcpg-jdk15on -->
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcpg-jdk15on</artifactId>
+			<version>1.58</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.codelibs/jcifs -->
+		<dependency>
+		    <groupId>org.codelibs</groupId>
+		    <artifactId>jcifs</artifactId>
+		    <version>1.3.18.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bitbucket.b_c</groupId>
+			<artifactId>jose4j</artifactId>
+			<version>0.6.2</version>
+		</dependency>
+	</dependencies>
+</project>
