@@ -12,8 +12,6 @@ Enterprise JavaBeans version of Files Exchange Service
     * Set connection-url
     * Set username
     * Set password
-    * Set secret in security.jwt.client-secret
-    * Set secret in security.jwt.client-secret
 
 ## Built With
 
